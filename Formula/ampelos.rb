@@ -2,25 +2,25 @@ class Ampelos < Formula
   desc "Dev-loop wrapper that adapts to your project"
   homepage "https://github.com/nsrosenqvist/ampelos"
   license any_of: ["MIT", "Apache-2.0"]
-  version "0.0.1" # updated automatically by CI
+  version "0.1.0" # updated automatically by CI
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/nsrosenqvist/ampelos/releases/download/v#{version}/ampelos-aarch64-apple-darwin.tar.gz"
-      sha256 "718e4f1efcaed1d81c43dc0ac9344076494cb6fd1c87d5b091b15093d47b7eec" # updated automatically by CI
+      sha256 "d173aa2e560119a511279b1236dc6a9f014766b5f613101dacb56abe9ba46bd4" # updated automatically by CI
     elsif Hardware::CPU.intel?
       url "https://github.com/nsrosenqvist/ampelos/releases/download/v#{version}/ampelos-x86_64-apple-darwin.tar.gz"
-      sha256 "08cd7a9cbe111b4e58b48f827d2eb5f5f1efaeb345119e08b637841d6f362094"
+      sha256 "6a37dd6135512223a005759232685fcf631a0185674fb4d54858b034c6a29cd9"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/nsrosenqvist/ampelos/releases/download/v#{version}/ampelos-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "653578cf36c9ffb024bad34f4dd6d16c66e2f2faadfe96e56f4a3c9234c3f2d0"
+      sha256 "8a85cbab16331185fbbcee487c56c597d0d1fbee74d8e2bbf6433e7a70b1636e"
     elsif Hardware::CPU.intel?
       url "https://github.com/nsrosenqvist/ampelos/releases/download/v#{version}/ampelos-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "19059b8da59f581deb1377cdf17b57301f7cef94ca1037c7facbd389330b3d78"
+      sha256 "8b1053b12ea87e7ec9d09982f16ad9aa425b256d6eb4afb67d62f7612d50d6f9"
     end
   end
 

@@ -1,23 +1,23 @@
-# homebrew-keel
+# homebrew-ampelos
 
-Homebrew tap for [keel](https://github.com/nsrosenqvist/keel) — a dev-loop wrapper that adapts to your project.
+Homebrew tap for [ampelos](https://github.com/nsrosenqvist/ampelos) — a dev-loop wrapper that adapts to your project.
 
 ## Installation
 
 ```sh
-brew tap nsrosenqvist/keel
-brew install keel
+brew tap nsrosenqvist/ampelos
+brew install ampelos
 ```
 
 Or install in a single command:
 
 ```sh
-brew install nsrosenqvist/keel/keel
+brew install nsrosenqvist/ampelos/ampelos
 ```
 
 ## Updating
 
 ```sh
 brew update
-brew upgrade keel
+brew upgrade ampelos
 ```

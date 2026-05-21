@@ -1,5 +1,5 @@
 class Croft < Formula
-  desc "The dev workspace you tend"
+  desc "Per-project dev-loop tool that adapts to your project"
   homepage "https://github.com/nsrosenqvist/croft"
   license any_of: ["MIT", "Apache-2.0"]
   version "0.0.0" # updated automatically by CI

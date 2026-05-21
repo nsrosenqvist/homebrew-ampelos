@@ -1,23 +1,23 @@
-# homebrew-ampelos
+# homebrew-croft
 
-Homebrew tap for [ampelos](https://github.com/nsrosenqvist/ampelos) — a dev-loop wrapper that adapts to your project.
+Homebrew tap for [croft](https://github.com/nsrosenqvist/croft) — the dev workspace you tend.
 
 ## Installation
 
 ```sh
-brew tap nsrosenqvist/ampelos
-brew install ampelos
+brew tap nsrosenqvist/croft
+brew install croft
 ```
 
 Or install in a single command:
 
 ```sh
-brew install nsrosenqvist/ampelos/ampelos
+brew install nsrosenqvist/croft/croft
 ```
 
 ## Updating
 
 ```sh
 brew update
-brew upgrade ampelos
+brew upgrade croft
 ```

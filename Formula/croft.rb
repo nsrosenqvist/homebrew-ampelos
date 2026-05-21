@@ -1,0 +1,34 @@
+class Croft < Formula
+  desc "The dev workspace you tend"
+  homepage "https://github.com/nsrosenqvist/croft"
+  license any_of: ["MIT", "Apache-2.0"]
+  version "0.0.0" # updated automatically by CI
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/nsrosenqvist/croft/releases/download/v#{version}/croft-aarch64-apple-darwin.tar.gz"
+      sha256 "PLACEHOLDER" # updated automatically by CI
+    elsif Hardware::CPU.intel?
+      url "https://github.com/nsrosenqvist/croft/releases/download/v#{version}/croft-x86_64-apple-darwin.tar.gz"
+      sha256 "PLACEHOLDER"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.arm?
+      url "https://github.com/nsrosenqvist/croft/releases/download/v#{version}/croft-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "PLACEHOLDER"
+    elsif Hardware::CPU.intel?
+      url "https://github.com/nsrosenqvist/croft/releases/download/v#{version}/croft-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "PLACEHOLDER"
+    end
+  end
+
+  def install
+    bin.install "croft"
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/croft --version")
+  end
+end
